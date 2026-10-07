@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AETHER // Bespoke Supercar Atelier & Engineering</title>
+  <meta name="description" content="Aether Atelier deconstructs, re-engineers, and handcrafts bespoke automotive commissions. Explore the full V10 carbon monocoque disassembly, custom engineering specifications, and transparent commissioning pricing.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient Audio Engine Toggle (Subtle V10 Acoustics) -->
+  <div id="ambient-audio-control" class="audio-control" title="Toggle Bespoke Acoustic Ambience">
+    <div class="audio-waves">
+      <span></span><span></span><span></span><span></span>
+    </div>
+    <span class="audio-label">ACOUSTIC RUN: OFF</span>
+  </div>
+
+  <!-- Minimalist Floating Atelier Header Navigation -->
+  <header class="atelier-header" id="header">
+    <div class="nav-container">
+      <a href="#hero" class="brand-mark" id="brand-logo">
+        <span class="brand-monogram">Æ</span>
+        <div class="brand-meta">
+          <span class="brand-title">AETHER</span>
+          <span class="brand-sub">ATELIER // STUTTGART</span>
+        </div>
+      </a>
+      <nav class="nav-links">
+        <a href="#disassembly" class="nav-link" id="nav-disassembly">DISASSEMBLY</a>
+        <a href="#manifesto" class="nav-link" id="nav-manifesto">PHILOSOPHY</a>
+        <a href="#engineering" class="nav-link" id="nav-engineering">ANATOMY</a>
+        <a href="#configurator" class="nav-link" id="nav-configurator">STUDIO & SPECS</a>
+        <a href="#pricing" class="nav-link" id="nav-pricing">COMMISSION PRICING</a>
+        <a href="#timeline" class="nav-link" id="nav-timeline">JOURNEY</a>
+        <a href="#inquiry" class="nav-link highlight-link" id="nav-inquiry">ACQUISITION</a>
+      </nav>
+      <div class="header-status">
+        <span class="status-indicator live-pulse"></span>
+        <span class="status-text">COMMISSION 09/15 ACTIVE</span>
+      </div>
+    </div>
+    <div class="global-progress-bar" id="global-progress-bar"></div>
+  </header>
+
+  <!-- ========================================================================= -->
+  <!-- HERO SECTION: 30FPS CANVAS FRAME SCRUB SEQUENCE (STRICTLY NO BUTTONS)     -->
+  <!-- ========================================================================= -->
+  <section class="hero-sequence-container" id="hero">
+    <div class="hero-sticky-stage">
+      <!-- High DPI Canvas Rendering 240 Sequential Frames -->
+      <canvas id="hero-canvas" class="hero-canvas" width="1280" height="720"></canvas>
+      
+      <!-- Vignette & Carbon Lighting Overlays -->
+      <div class="canvas-vignette"></div>
+      <div class="canvas-grid-overlay"></div>
+
+      <!-- Live Telemetry HUD -->
+      <div class="hero-hud-top">
+        <div class="hud-item">
+          <span class="hud-label">CAD SPEC</span>
+          <span class="hud-val">CHASSIS 980-V10</span>
+        </div>
+        <div class="hud-item">
+          <span class="hud-label">SEQUENCE</span>
+          <span class="hud-val" id="hud-sequence-name">V10_CORE_SCAN</span>
+        </div>
+        <div class="hud-item">
+          <span class="hud-label">FRAME CACHE</span>
+          <span class="hud-val" id="hud-frame-counter">FRAME 001 / 240</span>
+        </div>
+        <div class="hud-item">
+          <span class="hud-label">FRAME RATE</span>
+          <span class="hud-val">30.0 FPS NATIVE</span>
+        </div>
+      </div>
+
+      <!-- Preload Progress HUD (Fades out when ready) -->
+      <div class="preloader-overlay" id="preloader-hud">
+        <div class="preloader-inner">
+          <div class="preloader-monogram">Æ</div>
+          <div class="preloader-title">CALIBRATING HIGH-FIDELITY TELEMETRY FRAMES</div>
+          <div class="preloader-bar">
+            <div class="preloader-bar-fill" id="preloader-bar-fill"></div>
+          </div>
+          <div class="preloader-metrics">
+            <span id="preloader-count">0 / 240 FRAMES</span>
+            <span id="preloader-pct">0%</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Narrative Chapter Overlays (Apple-style Framer Motion transitions) -->
+      <!-- CHAPTER 1: Focus on Engine Bay (Frames 001 - 075) -->
+      <div class="narrative-layer narrative-chapter-1 active" id="chapter-1">
+        <div class="chapter-tag">CHAPTER 01 // BESPOKE POWERTRAIN BLUEPRINT</div>
+        <h1 class="chapter-headline">5.7L V10 NATURALLY ASPIRATED.</h1>
+        <p class="chapter-copy">
+          Individually balanced billet crank, quad carbon plenums, and 3D-printed Inconel 625 manifolds. Redline elevated to 9,400 RPM with instantaneous analog throttle response.
+        </p>
+        <div class="chapter-telemetry">
+          <div class="telemetry-block">
+            <span class="tel-num">680</span>
+            <span class="tel-unit">BHP</span>
+            <span class="tel-desc">DYNO CERTIFIED</span>
+          </div>
+          <div class="telemetry-block">
+            <span class="tel-num">9,400</span>
+            <span class="tel-unit">RPM</span>
+            <span class="tel-desc">ATMOSPHERIC CUTOFF</span>
+          </div>
+          <div class="telemetry-block">
+            <span class="tel-num">640</span>
+            <span class="tel-unit">NM</span>
+            <span class="tel-desc">PEAK CRANK TORQUE</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CHAPTER 2: Bodywork & Monocoque Encasement (Frames 076 - 150) -->
+      <div class="narrative-layer narrative-chapter-2" id="chapter-2">
+        <div class="chapter-tag">CHAPTER 02 // AUTOCLAVE MONOCOQUE ARCHITECTURE</div>
+        <h2 class="chapter-headline">CARBON COMPOSITE CELL.</h2>
+        <p class="chapter-copy">
+          Toray T1000 carbon weave cured under 7 bar autoclaves. Torsional rigidity augmented by 42% while shedding 140 kilograms of factory excess.
+        </p>
+        <div class="chapter-telemetry">
+          <div class="telemetry-block">
+            <span class="tel-num">1,180</span>
+            <span class="tel-unit">KG</span>
+            <span class="tel-desc">DRY KERB WEIGHT</span>
+          </div>
+          <div class="telemetry-block">
+            <span class="tel-num">-140</span>
+            <span class="tel-unit">KG</span>
+            <span class="tel-desc">WEIGHT DEVIATION</span>
+          </div>
+          <div class="telemetry-block">
+            <span class="tel-num">480</span>
+            <span class="tel-unit">KG</span>
+            <span class="tel-desc">DOWNFORCE @ 250 KM/H</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CHAPTER 3: Exploded Complete Chassis Anatomy (Frames 151 - 240) -->
+      <div class="narrative-layer narrative-chapter-3" id="chapter-3">
+        <div class="chapter-tag">CHAPTER 03 // FULL DECONSTRUCTION MATRIX</div>
+        <h2 class="chapter-headline">THE ANATOMY OF PERFECTION.</h2>
+        <p class="chapter-copy">
+          Over 3,420 bespoke components cataloged, milled, and hand-finished with aerospace tolerances. We don’t merely tune; we re-conceive every micron of mechanical kinetic art.
+        </p>
+        <div class="chapter-telemetry">
+          <div class="telemetry-block">
+            <span class="tel-num">3,420</span>
+            <span class="tel-unit">PARTS</span>
+            <span class="tel-desc">INDIVIDUALLY MILLED</span>
+          </div>
+          <div class="telemetry-block">
+            <span class="tel-num">±0.02</span>
+            <span class="tel-unit">MM</span>
+            <span class="tel-desc">LASER TOLERANCE</span>
+          </div>
+          <div class="telemetry-block">
+            <span class="tel-num">1,800</span>
+            <span class="tel-unit">HRS</span>
+            <span class="tel-desc">HAND ATELIER TIME</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom HUD & Scroll Indicator (Pure Informative, STRICTLY NO BUTTONS) -->
+      <div class="hero-hud-bottom">
+        <div class="hud-scrub-indicator">
+          <div class="scrub-track">
+            <div class="scrub-fill" id="scrub-fill"></div>
+          </div>
+          <div class="scrub-labels">
+            <span>001 POWERTRAIN</span>
+            <span>120 MONOCOQUE</span>
+            <span>240 EXPLODED VIEW</span>
+          </div>
+        </div>
+        <div class="scroll-cue">
+          <span class="scroll-cue-text">SCROLL DOWN TO DECONSTRUCT</span>
+          <div class="scroll-cue-chevron"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- SECTION 2: THE ATELIER PHILOSOPHY // APPLE-STYLE ILLUMINATING MANIFESTO   -->
+  <!-- ========================================================================= -->
+  <section class="section-manifesto" id="manifesto">
+    <div class="section-wrapper">
+      <div class="manifesto-eyebrow">THE AETHER DOCTRINE</div>
+      
+      <!-- Apple-style scroll illuminated words -->
+      <h2 class="manifesto-illuminated-quote" id="manifesto-quote">
+        <span>Most</span> <span>customisers</span> <span>add</span> <span>aftermarket</span> <span>accessories.</span>
+        <span>At</span> <span>Aether,</span> <span>we</span> <span>strip</span> <span>the</span> <span>donor</span> 
+        <span>chassis</span> <span>to</span> <span>its</span> <span>bare</span> <span>molecular</span> <span>carbon</span> 
+        <span>tub,</span> <span>re-engineer</span> <span>every</span> <span>mechanical</span> <span>geometry,</span> 
+        <span>and</span> <span>re-imagine</span> <span>automotive</span> <span>perfection</span> <span>without</span> 
+        <span>compromise.</span>
+      </h2>
+
+      <div class="telemetry-marquee-grid">
+        <div class="marquee-card">
+          <div class="card-icon">⚡</div>
+          <div class="card-metric" data-target="9400">9,400</div>
+          <div class="card-label">PEAK RPM ACOUSTIC PURITY</div>
+          <div class="card-desc">Atmospheric V10 naturally aspirated screamer without turbo lag or synthetic resonators.</div>
+        </div>
+        <div class="marquee-card">
+          <div class="card-icon">⚖️</div>
+          <div class="card-metric" data-target="1180">1,180</div>
+          <div class="card-label">KG TOTAL DRY KERB WEIGHT</div>
+          <div class="card-desc">Shedding 140kg through full autoclave carbon replacement and titanium bolt hardware.</div>
+        </div>
+        <div class="marquee-card">
+          <div class="card-icon">🏎️</div>
+          <div class="card-metric" data-target="2.9" data-decimals="1">2.9</div>
+          <div class="card-label">SECONDS 0-100 KM/H</div>
+          <div class="card-desc">Analog 6-speed manual with twin-plate carbon-ceramic clutch and mechanical limited slip.</div>
+        </div>
+        <div class="marquee-card">
+          <div class="card-icon">🔒</div>
+          <div class="card-metric" data-target="15">15</div>
+          <div class="card-label">GLOBAL COMMISSIONS WORLDWIDE</div>
+          <div class="card-desc">Strictly limited allocation per series to guarantee historical collector provenance.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- SECTION 3: EXPLODED CHASSIS ANATOMY // INTERACTIVE BLUEPRINT SPEC EXPLORER-->
+  <!-- ========================================================================= -->
+  <section class="section-anatomy" id="engineering">
+    <div class="section-wrapper">
+      <div class="section-header-block">
+        <div class="sub-badge">SCHEMATIC CAD DECONSTRUCTION</div>
+        <h2 class="section-title">ENGINEERING DISSECTION</h2>
+        <p class="section-subtitle">
+          Directly referencing the 240-frame exploded architecture. Every assembly has been engineered to aerospace standards.
+        </p>
+      </div>
+
+      <!-- Interactive Component Tabs & Dynamic Blueprint Viewer -->
+      <div class="anatomy-container">
+        <div class="anatomy-controls" id="anatomy-nav">
+          <button class="anatomy-tab active" data-part="powertrain" id="tab-powertrain">
+            <span class="tab-index">01</span>
+            <span class="tab-title">5.7L V10 POWERTRAIN</span>
+          </button>
+          <button class="anatomy-tab" data-part="suspension" id="tab-suspension">
+            <span class="tab-index">02</span>
+            <span class="tab-title">PUSHROD ÖHLINS DAMPERS</span>
+          </button>
+          <button class="anatomy-tab" data-part="chassis" id="tab-chassis">
+            <span class="tab-index">03</span>
+            <span class="tab-title">T1000 CARBON MONOCOQUE</span>
+          </button>
+          <button class="anatomy-tab" data-part="exhaust" id="tab-exhaust">
+            <span class="tab-index">04</span>
+            <span class="tab-title">INCONEL 625 EXHAUST</span>
+          </button>
+          <button class="anatomy-tab" data-part="braking" id="tab-braking">
+            <span class="tab-index">05</span>
+            <span class="tab-title">CARBON CERAMIC MATRIX</span>
+          </button>
+          <button class="anatomy-tab" data-part="cockpit" id="tab-cockpit">
+            <span class="tab-index">06</span>
+            <span class="tab-title">BESPOKE ARTISAN COCKPIT</span>
+          </button>
+        </div>
+
+        <div class="anatomy-display-card" id="anatomy-card">
+          <div class="anatomy-card-media">
+            <img src="images/herosection/ezgif-frame-240.png" alt="Exploded Chassis Component" id="anatomy-image" class="anatomy-img">
+            <div class="blueprint-scanline"></div>
+            <div class="anatomy-hotspot-pin pin-1" data-spot="engine" style="top: 55%; left: 35%;">
+              <span class="pin-pulse"></span>
+              <span class="pin-tag">V10_CORE</span>
+            </div>
+            <div class="anatomy-hotspot-pin pin-2" data-spot="suspension" style="top: 68%; left: 24%;">
+              <span class="pin-pulse"></span>
+              <span class="pin-tag">PUSHROD_TTX</span>
+            </div>
+            <div class="anatomy-hotspot-pin pin-3" data-spot="exhaust" style="top: 50%; left: 74%;">
+              <span class="pin-pulse"></span>
+              <span class="pin-tag">INCONEL_625</span>
+            </div>
+          </div>
+          <div class="anatomy-card-info" id="anatomy-info">
+            <div class="anatomy-spec-badge" id="anatomy-code">SPEC CODE // APX-V10-CRG</div>
+            <h3 class="anatomy-part-name" id="anatomy-title">5.7L V10 Bespoke Atmospheric Powertrain</h3>
+            <p class="anatomy-part-desc" id="anatomy-desc">
+              Stripped down to the bare dry-sump magnesium block. Fitted with forged Carrillo titanium connecting rods, custom Mahle motorsport pistons, quad billet carbon intake plenums, and dual-throttle per cylinder induction. Hand-balanced to within 0.1 grams tolerance.
+            </p>
+            <div class="anatomy-data-table" id="anatomy-specs">
+              <div class="data-row">
+                <span class="data-key">Displacement</span>
+                <span class="data-val">5,733 cc (Atmospheric V10)</span>
+              </div>
+              <div class="data-row">
+                <span class="data-key">Valvetrain</span>
+                <span class="data-val">40 Titanium Valves // DLC Coated Followers</span>
+              </div>
+              <div class="data-row">
+                <span class="data-key">Specific Power</span>
+                <span class="data-val">118.6 BHP / Litre Naturally Aspirated</span>
+              </div>
+              <div class="data-row">
+                <span class="data-key">Redline Frequency</span>
+                <span class="data-val">9,400 RPM Peak Cutoff</span>
+              </div>
+              <div class="data-row">
+                <span class="data-key">Exhaust Metallurgy</span>
+                <span class="data-val">Equal-Length Inconel 625 (0.65mm wall)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- SECTION 4: INTERACTIVE ATELIER CONFIGURATOR & DYNAMIC PRICING ENGINE      -->
+  <!-- ========================================================================= -->
+  <section class="section-configurator" id="configurator">
+    <div class="section-wrapper">
+      <div class="section-header-block">
+        <div class="sub-badge">REAL-TIME COMMISSION BUILDER</div>
+        <h2 class="section-title">ATELIER SPECIFICATION & PRICE ENGINE</h2>
+        <p class="section-subtitle">
+          Select custom engineering modules to see real-time price updates and fully itemized cost calculations.
+        </p>
+      </div>
+
+      <div class="configurator-grid">
+        <!-- Interactive Controls Column -->
+        <div class="config-controls-pane">
+          <!-- Option Group 1: Base Platform -->
+          <div class="config-group">
+            <div class="config-group-header">
+              <span class="config-step-num">01</span>
+              <div>
+                <h4 class="config-group-title">Donor Chassis Architecture</h4>
+                <p class="config-group-hint">Select the mechanical foundation for your bespoke commission.</p>
+              </div>
+            </div>
+            <div class="config-options-list" data-category="platform">
+              <label class="config-option active">
+                <input type="radio" name="opt-platform" value="carrera_gt" checked data-price="380000" data-hours="950">
+                <div class="option-content">
+                  <div class="option-main">
+                    <span class="option-name">Mid-Engine V10 Carbon Monocoque</span>
+                    <span class="option-desc">Donor: Carrera GT / Audi R8 V10 / Huracan Monocoque</span>
+                  </div>
+                  <div class="option-cost">Included in Baseline</div>
+                </div>
+              </label>
+              <label class="config-option">
+                <input type="radio" name="opt-platform" value="front_mid_v12" data-price="440000" data-hours="1120">
+                <div class="option-content">
+                  <div class="option-main">
+                    <span class="option-name">Front-Mid V12 Atmospheric Grand Tourer</span>
+                    <span class="option-desc">Donor: Ferrari 599 / 812 / Aston Martin V12</span>
+                  </div>
+                  <div class="option-cost">+$60,000 Upgrade</div>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <!-- Option Group 2: Powertrain Stage -->
+          <div class="config-group">
+            <div class="config-group-header">
+              <span class="config-step-num">02</span>
+              <div>
+                <h4 class="config-group-title">Powertrain Engineering Stage</h4>
+                <p class="config-group-hint">Bespoke engine blueprinting, internal metallurgy, and dyno calibration.</p>
+              </div>
+            </div>
+            <div class="config-options-list" data-category="engine">
+              <label class="config-option active">
+                <input type="radio" name="opt-engine" value="stage1_blueprint" checked data-price="0" data-hours="240">
+                <div class="option-content">
+                  <div class="option-main">
+                    <span class="option-name">Atelier Stage I // Atmospheric Blueprint (650 HP)</span>
+                    <span class="option-desc">Hand-balanced rotating assembly, titanium retainers, ECU re-map</span>
+                  </div>
+                  <div class="option-cost">Base Specification</div>
+                </div>
+              </label>
+              <label class="config-option">
+                <input type="radio" name="opt-engine" value="stage2_speciale" data-price="64000" data-hours="410">
+                <div class="option-content">
+                  <div class="option-main">
+                    <span class="option-name">Atelier Stage II // Sprint High-Cam 9,400 RPM (710 HP)</span>
+                    <span class="option-desc">Carrillo titanium rods, individual carbon plenums, solid lifters</span>
+                  </div>
+                  <div class="option-cost">+$64,000</div>
+                </div>
+              </label>
+              <label class="config-option">
+                <input type="radio" name="opt-engine" value="stage3_evolution" data-price="128000" data-hours="680">
+                <div class="option-content">
+                  <div class="option-main">
+                    <span class="option-name">Atelier Stage III // Twin-Chamber Evolution (860 HP)</span>
+                    <span class="option-desc">Bespoke billet stroker crank, twin scroll carbon induction, MoTeC M1 ECU</span>
+                  </div>
+                  <div class="option-cost">+$128,000</div>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <!-- Option Group 3: Aerodynamics & Exterior Weave -->
+          <div class="config-group">
+            <div class="config-group-header">
+              <span class="config-step-num">03</span>
+              <div>
+                <h4 class="config-group-title">Aerodynamic Bodywork & Carbon Weave</h4>
+                <p class="config-group-hint">Pre-preg carbon fiber composite panels and active downforce aerodynamics.</p>
+              </div>
+            </div>
+            <div class="config-options-list" data-category="aero">
+              <label class="config-option active">
+                <input type="radio" name="opt-aero" value="pure_touring" checked data-price="0" data-hours="180">
+                <div class="option-content">
+                  <div class="option-main">
+                    <span class="option-name">Pure GT Touring // Sleek Carbon Body</span>
+                    <span class="option-desc">Factory silhouette preserved with exposed matte carbon accents</span>
+                  </div>
+                  <div class="option-cost">Standard</div>
+                </div>
+              </label>
+              <label class="config-option">
+                <input type="radio" name="opt-aero" value="clubsport_downforce" data-price="48000" data-hours="310">
+                <div class="option-content">
+                  <div class="option-main">
+                    <span class="option-name">Clubsport Downforce // CFD Venturi Tunnels</span>
+                    <span class="option-desc">Carbon front splitter, functional louvered fenders, rear carbon wing (+280kg)</span>
+                  </div>
+                  <div class="option-cost">+$48,000</div>
+                </div>
+              </label>
+              <label class="config-option">
+                <input type="radio" name="opt-aero" value="lemans_active" data-price="92000" data-hours="520">
+                <div class="option-content">
+                  <div class="option-main">
+                    <span class="option-name">GTE Prototype // Active Hydraulic DRS Aerofoil</span>
+                    <span class="option-desc">Electro-hydraulic active rear aerofoil, dual floor venturi, full autoclave skin</span>
+                  </div>
+                  <div class="option-cost">+$92,000</div>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <!-- Option Group 4: Cockpit & Leather Tailoring -->
+          <div class="config-group">
+            <div class="config-group-header">
+              <span class="config-step-num">04</span>
+              <div>
+                <h4 class="config-group-title">Cockpit Atelier Tailoring</h4>
+                <p class="config-group-hint">Bespoke cabin architecture with aerospace metals and Scottish leather.</p>
+              </div>
+            </div>
+            <div class="config-options-list" data-category="cockpit">
+              <label class="config-option active">
+                <input type="radio" name="opt-cockpit" value="carbon_purist" checked data-price="0" data-hours="120">
+                <div class="option-content">
+                  <div class="option-main">
+                    <span class="option-name">Carbon Purist // Lightweight Minimalist</span>
+                    <span class="option-desc">Exposed carbon monocoque, Alcantara pull-straps, titanium gated shifter</span>
+                  </div>
+                  <div class="option-cost">Standard</div>
+                </div>
+              </label>
+              <label class="config-option">
+                <input type="radio" name="opt-cockpit" value="bespoke_leather" data-price="38000" data-hours="260">
+                <div class="option-content">
+                  <div class="option-main">
+                    <span class="option-name">Bridge of Weir Semi-Aniline Leather // Cognac Trim</span>
+                    <span class="option-desc">Hand-stitched leather bucket seats, milled aluminum dials, knurled toggles</span>
+                  </div>
+                  <div class="option-cost">+$38,000</div>
+                </div>
+              </label>
+              <label class="config-option">
+                <input type="radio" name="opt-cockpit" value="one_of_one_artisan" data-price="68000" data-hours="390">
+                <div class="option-content">
+                  <div class="option-main">
+                    <span class="option-name">1-of-1 Atelier Bespoke // Tartan Weave & Titanium</span>
+                    <span class="option-desc">Custom woven Scottish heritage tartan, titanium sill plaque, 3D laser dials</span>
+                  </div>
+                  <div class="option-cost">+$68,000</div>
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sticky Live Pricing Summary Column -->
+        <div class="config-summary-pane">
+          <div class="pricing-card-sticky">
+            <div class="summary-header">
+              <span class="summary-badge">ESTIMATED COMMISSION TOTAL</span>
+              <div class="total-price-display">
+                <span class="currency-symbol">$</span>
+                <span class="total-price-value" id="calc-total-price">380,000</span>
+                <span class="currency-currency">USD</span>
+              </div>
+              <p class="summary-vat-note">+ Client Donor Vehicle Supplied // Ex-Works Stuttgart</p>
+            </div>
+
+            <!-- Itemized Pricing Breakdown (Transparent details requested by user) -->
+            <div class="itemized-pricing-list" id="itemized-list">
+              <div class="item-row">
+                <span class="item-label">Chassis Deconstruction & Laser Scanning</span>
+                <span class="item-value" id="item-chassis-val">$380,000</span>
+              </div>
+              <div class="item-row">
+                <span class="item-label" id="item-engine-lbl">Powertrain: Stage I Blueprint</span>
+                <span class="item-value" id="item-engine-val">$0</span>
+              </div>
+              <div class="item-row">
+                <span class="item-label" id="item-aero-lbl">Aerodynamics: Pure GT Carbon</span>
+                <span class="item-value" id="item-aero-val">$0</span>
+              </div>
+              <div class="item-row">
+                <span class="item-label" id="item-cockpit-lbl">Cockpit: Carbon Purist</span>
+                <span class="item-value" id="item-cockpit-val">$0</span>
+              </div>
+              <div class="item-row line-accent">
+                <span class="item-label">Dyno Calibration & Circuit Telemetry Setup</span>
+                <span class="item-value">Included</span>
+              </div>
+              <div class="item-row line-accent">
+                <span class="item-label">Bespoke Aluminum Monogram Flight Box & Key</span>
+                <span class="item-value">Included</span>
+              </div>
+            </div>
+
+            <!-- Engineering Metric Details -->
+            <div class="summary-metrics-box">
+              <div class="s-metric">
+                <span class="s-metric-key">LABOR HOURS</span>
+                <span class="s-metric-val" id="calc-hours">950 HRS</span>
+              </div>
+              <div class="s-metric">
+                <span class="s-metric-key">POWER OUTPUT</span>
+                <span class="s-metric-val" id="calc-power">650 BHP</span>
+              </div>
+              <div class="s-metric">
+                <span class="s-metric-key">CURB WEIGHT</span>
+                <span class="s-metric-val" id="calc-weight">1,180 KG</span>
+              </div>
+              <div class="s-metric">
+                <span class="s-metric-key">EST. BUILD TIME</span>
+                <span class="s-metric-val" id="calc-timeline">8 MONTHS</span>
+              </div>
+            </div>
+
+            <!-- Atelier Detail Guarantee -->
+            <div class="transparency-note">
+              <div class="note-icon">🛡️</div>
+              <div class="note-text">
+                <strong>Transparent Atelier Cost Protocol:</strong> All engineering fees include continuous FIA-grade stress validation, 500km circuit sign-off at Nürburgring, and a 3-Year Unlimited Mileage Atelier Warranty.
+              </div>
+            </div>
+
+            <a href="#inquiry" class="action-btn-commission" id="btn-inquire-spec">RESERVE THIS SPECIFICATION</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- SECTION 5: DETAILED COMMISSION TIERS // TRANSPARENT PRICING ARCHITECTURE  -->
+  <!-- ========================================================================= -->
+  <section class="section-pricing-matrix" id="pricing">
+    <div class="section-wrapper">
+      <div class="section-header-block">
+        <div class="sub-badge">COMMISSION TIERS EXPLAINED</div>
+        <h2 class="section-title">TRANSPARENT ATELIER PRICING</h2>
+        <p class="section-subtitle">
+          We believe high-art engineering demands complete transparency. Below is the precise scope, labor investment, and pricing for our three bespoke commission tiers.
+        </p>
+      </div>
+
+      <div class="pricing-tiers-grid">
+        <!-- TIER 1 -->
+        <div class="tier-card">
+          <div class="tier-badge">COMMISSION LEVEL 01</div>
+          <h3 class="tier-title">GT TOURING</h3>
+          <p class="tier-intent">Purist enhancement. Focusing on weight eradication, chassis stiffness, and high-RPM atmospheric breath.</p>
+          <div class="tier-price-box">
+            <span class="tier-price">$340,000</span>
+            <span class="tier-unit">USD + Donor Car</span>
+          </div>
+          <div class="tier-stats-strip">
+            <div class="ts-item"><span>HOURS:</span> 950 hrs</div>
+            <div class="ts-item"><span>POWER:</span> 650 BHP</div>
+            <div class="ts-item"><span>DELIVERY:</span> 8 Months</div>
+          </div>
+          <ul class="tier-feature-list">
+            <li><span>✓</span> Full disassembly & ultrasonic chassis degreasing</li>
+            <li><span>✓</span> T1000 carbon weave skin replacement (-70kg)</li>
+            <li><span>✓</span> Naturally aspirated V10 blueprinted & balanced</li>
+            <li><span>✓</span> Inconel 625 lightweight exhaust system</li>
+            <li><span>✓</span> Bespoke Öhlins TTX 2-way adjustable coilovers</li>
+            <li><span>✓</span> Monoblock forged magnesium center-lock wheels</li>
+            <li><span>✓</span> Re-trimmed Alcantara & carbon fiber cockpit</li>
+            <li><span>✓</span> 3-Year Aether Atelier Mechanical Warranty</li>
+          </ul>
+          <div class="tier-card-footer">
+            <a href="#inquiry" class="tier-cta" id="cta-tier-1">SELECT GT TOURING</a>
+          </div>
+        </div>
+
+        <!-- TIER 2: FEATURED / RECOMMENDED -->
+        <div class="tier-card featured-tier">
+          <div class="tier-badge featured-badge">MOST COVETED // COMMISSION LEVEL 02</div>
+          <h3 class="tier-title">ATELIER SPECIALE</h3>
+          <p class="tier-intent">The definitive grand masterwork. Complete dry-carbon monocoque reconstruction and 9,400 RPM screamer.</p>
+          <div class="tier-price-box">
+            <span class="tier-price">$580,000</span>
+            <span class="tier-unit">USD + Donor Car</span>
+          </div>
+          <div class="tier-stats-strip">
+            <div class="ts-item"><span>HOURS:</span> 1,650 hrs</div>
+            <div class="ts-item"><span>POWER:</span> 720 BHP</div>
+            <div class="ts-item"><span>DELIVERY:</span> 12 Months</div>
+          </div>
+          <ul class="tier-feature-list">
+            <li><span>✓</span> Everything in GT Touring Commission</li>
+            <li><span>✓</span> Complete autoclave pre-preg carbon body skinning (-140kg)</li>
+            <li><span>✓</span> Titanium connecting rods & high-lift camshafts (9,400 RPM)</li>
+            <li><span>✓</span> Quad billet carbon intake plenums with individual throttles</li>
+            <li><span>✓</span> Pushrod suspension with 4-way Öhlins TTX remote reservoir</li>
+            <li><span>✓</span> Carbon-ceramic 410mm matrix brakes with titanium pistons</li>
+            <li><span>✓</span> Full Bridge of Weir semi-aniline bespoke leather tailoring</li>
+            <li><span>✓</span> Gated manual titanium shifter mechanism with exposed links</li>
+            <li><span>✓</span> 500km validation sign-off at Nürburgring Nordschleife</li>
+          </ul>
+          <div class="tier-card-footer">
+            <a href="#inquiry" class="tier-cta featured-cta" id="cta-tier-2">SELECT ATELIER SPECIALE</a>
+          </div>
+        </div>
+
+        <!-- TIER 3 -->
+        <div class="tier-card">
+          <div class="tier-badge">1-OF-1 BESPOKE // COMMISSION LEVEL 03</div>
+          <h3 class="tier-title">PROTOTYPE ZERO</h3>
+          <p class="tier-intent">Unlimited automotive haute horlogerie. Bespoke aerodynamic styling, bespoke engine block, and private track days.</p>
+          <div class="tier-price-box">
+            <span class="tier-price">$920,000</span>
+            <span class="tier-unit">USD + Donor Car</span>
+          </div>
+          <div class="tier-stats-strip">
+            <div class="ts-item"><span>HOURS:</span> 2,800 hrs</div>
+            <div class="ts-item"><span>POWER:</span> 860+ BHP</div>
+            <div class="ts-item"><span>DELIVERY:</span> 18 Months</div>
+          </div>
+          <ul class="tier-feature-list">
+            <li><span>✓</span> Everything in Atelier Speciale</li>
+            <li><span>✓</span> 1-of-1 bespoke body design clay-modeled with lead designer</li>
+            <li><span>✓</span> Active electro-hydraulic carbon DRS rear aerofoil & floor venturi</li>
+            <li><span>✓</span> Bespoke 6.0L billet stroker V10 engine or twin-chamber system</li>
+            <li><span>✓</span> MoTeC M1 telemetry with real-time pit telemetry box</li>
+            <li><span>✓</span> Fully bespoke interior switchgear CNC milled from solid titanium</li>
+            <li><span>✓</span> 3 private circuit test days with factory racing driver</li>
+            <li><span>✓</span> Bespoke hard-cover hand-bound leather Build Documentation Book</li>
+            <li><span>✓</span> Lifetime Concierge Care & private hangar delivery anywhere globally</li>
+          </ul>
+          <div class="tier-card-footer">
+            <a href="#inquiry" class="tier-cta" id="cta-tier-3">REQUEST PROTOTYPE ZERO</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Granular Cost Breakdown Accordion / Detail Explanations -->
+      <div class="cost-transparency-details">
+        <h3 class="details-heading">WHERE DOES YOUR INVESTMENT GO? // THE DETAILED ACCOUNTING</h3>
+        <div class="cost-breakdown-cards">
+          <div class="breakdown-card">
+            <div class="b-card-pct">42%</div>
+            <div class="b-card-name">AEROSPACE METALLURGY & COMPOSITES</div>
+            <p class="b-card-desc">
+              Pre-preg Toray T1000 carbon fiber fabric, autoclave oven cycles, 3D printed Inconel 625 exhaust tubing, and titanium Ti-6Al-4V fasteners throughout.
+            </p>
+          </div>
+          <div class="breakdown-card">
+            <div class="b-card-pct">35%</div>
+            <div class="b-card-name">ARTISAN HANDCRAFT & FABRICATION</div>
+            <p class="b-card-desc">
+              Over 1,200 to 2,800 man-hours by master mechanics, composite laminators, and upholstery artisans with decades of Formula 1 and Le Mans heritage.
+            </p>
+          </div>
+          <div class="breakdown-card">
+            <div class="b-card-pct">15%</div>
+            <div class="b-card-name">DYNO & CIRCUIT VALIDATION</div>
+            <p class="b-card-desc">
+              Full AVL engine dyno endurance testing, wind-tunnel CFD validation, and high-speed telemetry sign-off at Nürburgring and Silverstone.
+            </p>
+          </div>
+          <div class="breakdown-card">
+            <div class="b-card-pct">8%</div>
+            <div class="b-card-name">PROVENANCE & BESPOKE ARTIFACTS</div>
+            <p class="b-card-desc">
+              Official registration into the Aether Global Registry, handcrafted titanium key sculpture, hand-bound archive monograph, and custom fitted flight luggage.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- SECTION 6: CRAFTSMANSHIP & METICULOUS DETAILS (GALLERY OF WORK)           -->
+  <!-- ========================================================================= -->
+  <section class="section-craft" id="craftsmanship">
+    <div class="section-wrapper">
+      <div class="section-header-block">
+        <div class="sub-badge">HAUTE HORLOGERIE FOR AUTOMOBILES</div>
+        <h2 class="section-title">THE ART OF MILLIMETERS</h2>
+        <p class="section-subtitle">
+          Examine the tactile quality of our hand-finished titanium hardware, exposed carbon weave, and bespoke leatherwork.
+        </p>
+      </div>
+
+      <div class="craft-gallery-grid">
+        <div class="craft-card">
+          <div class="craft-img-container">
+            <img src="images/details/carbon_craft.jpg" alt="Macro view of carbon weave and titanium hex fasteners" class="craft-img">
+            <div class="craft-overlay">
+              <span class="craft-badge">DRY PRE-PREG CARBON WEAVE</span>
+              <p>Autoclave cured at 7 bars. Matte satin finish with titanium flush countersunk bolts and Hermès-orange saddle stitch.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="craft-card">
+          <div class="craft-img-container">
+            <img src="images/details/cockpit_interior.jpg" alt="Custom tailored supercar cockpit" class="craft-img">
+            <div class="craft-overlay">
+              <span class="craft-badge">BESPOKE 01/01 COCKPIT</span>
+              <p>Bridge of Weir cognac leather bucket seats, exposed carbon floor, open-gate aluminum 6-speed manual shifter, analog orange luminescent dials.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- SECTION 7: THE 5-PHASE COMMISSION JOURNEY (APPLE-STYLE TIMELINE)          -->
+  <!-- ========================================================================= -->
+  <section class="section-journey" id="timeline">
+    <div class="section-wrapper">
+      <div class="section-header-block">
+        <div class="sub-badge">FROM INCEPTION TO CIRCUIT DELIVERY</div>
+        <h2 class="section-title">THE COMMISSIONING JOURNEY</h2>
+        <p class="section-subtitle">
+          A bespoke automotive build is an emotional odyssey. Follow every milestone of your vehicle's metamorphosis.
+        </p>
+      </div>
+
+      <div class="timeline-tree">
+        <!-- Milestone 1 -->
+        <div class="timeline-step">
+          <div class="step-marker">01</div>
+          <div class="step-card">
+            <div class="step-time">MONTH 01</div>
+            <h3 class="step-title">Private Consultation & Digital Twin Spec</h3>
+            <p class="step-desc">
+              You meet one-on-one with our Chief Aerodynamicist and Interior Master at our Stuttgart atelier. We build a photorealistic 3D CAD digital twin of your exact commission, down to the stitch thread color and carbon weave angle.
+            </p>
+            <div class="step-tag">DELIVERABLE: PHOTOREALISTIC CAD PROTOTYPE & MATERIAL SAMPLES</div>
+          </div>
+        </div>
+
+        <!-- Milestone 2 -->
+        <div class="timeline-step">
+          <div class="step-marker">02</div>
+          <div class="step-card">
+            <div class="step-time">MONTHS 02 - 03</div>
+            <h3 class="step-title">Tear-Down & Laser Metrology NDT Scanning</h3>
+            <p class="step-desc">
+              Your donor vehicle is stripped down to the bare carbon or aluminum tub. Every joint undergoes non-destructive ultrasonic testing (NDT). High-precision laser scanners capture 100 million coordinate points to confirm structural alignment within 0.02mm.
+            </p>
+            <div class="step-tag">DELIVERABLE: CHASSIS STRUCTURAL CERTIFICATE & NDT HEALTH REPORT</div>
+          </div>
+        </div>
+
+        <!-- Milestone 3 -->
+        <div class="timeline-step">
+          <div class="step-marker">03</div>
+          <div class="step-card">
+            <div class="step-time">MONTHS 04 - 07</div>
+            <h3 class="step-title">Engine Blueprinting & Autoclave Fabrication</h3>
+            <p class="step-desc">
+              The engine is rebuilt in our temperature-controlled clean room. Piston weights matched within 0.05 grams. New carbon bodywork is laid up by hand, vacuum bagged, and baked under 7 bar pressure. Exhaust headers are 3D-printed in Inconel 625.
+            </p>
+            <div class="step-tag">DELIVERABLE: DYNO HORSEPOWER LOG & TIME-LAPSE BUILD REEL</div>
+          </div>
+        </div>
+
+        <!-- Milestone 4 -->
+        <div class="timeline-step">
+          <div class="step-marker">04</div>
+          <div class="step-card">
+            <div class="step-time">MONTHS 08 - 10</div>
+            <h3 class="step-title">Dyno Calibration & High-Speed Circuit Validation</h3>
+            <p class="step-desc">
+              500 kilometers of rigorous testing. Suspension geometry corner-weighted on laser scales with ballast matching your exact body weight. High-speed aero validation and acoustic sound-level tuning at Nürburgring Nordschleife.
+            </p>
+            <div class="step-tag">DELIVERABLE: CIRCUIT TELEMETRY DATA & HIGH-SPEED VIDEO</div>
+          </div>
+        </div>
+
+        <!-- Milestone 5 -->
+        <div class="timeline-step">
+          <div class="step-marker">05</div>
+          <div class="step-card">
+            <div class="step-time">MONTH 11 - 12</div>
+            <h3 class="step-title">Private Circuit Handover & Monograph Delivery</h3>
+            <p class="step-desc">
+              Delivery takes place at a private track reserved exclusively for you, accompanied by our Chief Test Driver. You receive your bespoke billet key, customized flight luggage, and a hand-bound 200-page leather archive monograph detailing every serial number.
+            </p>
+            <div class="step-tag">DELIVERABLE: WHITE-GLOVE CIRCUIT HANDOVER & TITANIUM ARTIFACTS</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- SECTION 8: ACOUSTIC FREQUENCY LAB // INTERACTIVE RPM V10 SIMULATOR        -->
+  <!-- ========================================================================= -->
+  <section class="section-audio-lab" id="acoustic-lab">
+    <div class="section-wrapper">
+      <div class="section-header-block">
+        <div class="sub-badge">ACOUSTIC SPECTROMETRY</div>
+        <h2 class="section-title">THE 9,400 RPM ACOUSTIC ENGINE</h2>
+        <p class="section-subtitle">
+          Slide the tachometer throttle to experience the acoustic frequency of our equal-length Inconel 625 exhaust system in real time.
+        </p>
+      </div>
+
+      <div class="audio-lab-container">
+        <!-- Live Acoustic Waveform Canvas -->
+        <div class="waveform-screen">
+          <canvas id="acoustic-canvas" width="1000" height="240"></canvas>
+          <div class="waveform-telemetry">
+            <div><span class="wt-k">FUNDAMENTAL FREQ:</span> <span class="wt-v" id="wt-freq">142 Hz</span></div>
+            <div><span class="wt-k">HARMONIC RATIO:</span> <span class="wt-v">10-ORDER FIRING</span></div>
+            <div><span class="wt-k">SOUND PRESSURE:</span> <span class="wt-v" id="wt-db">78 dBA</span></div>
+            <div><span class="wt-k">VALVE OPENING:</span> <span class="wt-v" id="wt-exhaust-status">PULSE RESONANCE</span></div>
+          </div>
+        </div>
+
+        <!-- Interactive RPM Throttle Slider -->
+        <div class="rpm-controller-panel">
+          <div class="rpm-readout">
+            <span class="rpm-number" id="rpm-display">850</span>
+            <span class="rpm-unit">RPM</span>
+          </div>
+
+          <div class="rpm-slider-track">
+            <input type="range" id="rpm-slider" min="850" max="9400" value="850" step="50" class="rpm-range-input">
+            <div class="rpm-ticks">
+              <span>1K IDLE</span>
+              <span>3K CRUISE</span>
+              <span>5K POWER</span>
+              <span>7K SINGING</span>
+              <span class="redline-tick">9.4K REDLINE</span>
+            </div>
+          </div>
+
+          <div class="rpm-audio-actions">
+            <button class="synth-toggle-btn" id="btn-sound-toggle">
+              <span class="btn-sound-icon">🔊</span>
+              <span id="sound-btn-text">START SYNTHESIZED ENGINE AUDIO</span>
+            </button>
+            <span class="audio-headphones-hint">Best experienced with headphones for low-frequency V10 harmonics.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- SECTION 9: COMMISSION ALLOCATION VAULT & ACQUISITION INQUIRY              -->
+  <!-- ========================================================================= -->
+  <section class="section-inquiry" id="inquiry">
+    <div class="section-wrapper">
+      <div class="section-header-block">
+        <div class="sub-badge">SERIES ALLOCATION REGISTER</div>
+        <h2 class="section-title">CHASSIS ALLOCATION VAULT</h2>
+        <p class="section-subtitle">
+          Only 15 bespoke commissions are accepted across 2026-2027. Review active build slots and submit your commission intent.
+        </p>
+      </div>
+
+      <!-- Live Slot Registry Grid -->
+      <div class="slots-registry-grid">
+        <div class="slot-item slot-taken">
+          <div class="slot-num">CHASSIS 01</div>
+          <div class="slot-status">DELIVERED // TOKYO</div>
+        </div>
+        <div class="slot-item slot-taken">
+          <div class="slot-num">CHASSIS 02</div>
+          <div class="slot-status">DELIVERED // LONDON</div>
+        </div>
+        <div class="slot-item slot-taken">
+          <div class="slot-num">CHASSIS 03</div>
+          <div class="slot-status">DELIVERED // ZURICH</div>
+        </div>
+        <div class="slot-item slot-taken">
+          <div class="slot-num">CHASSIS 04</div>
+          <div class="slot-status">UNDER BUILD // STUTTGART</div>
+        </div>
+        <div class="slot-item slot-taken">
+          <div class="slot-num">CHASSIS 05</div>
+          <div class="slot-status">UNDER BUILD // MONACO</div>
+        </div>
+        <div class="slot-item slot-taken">
+          <div class="slot-num">CHASSIS 06</div>
+          <div class="slot-status">UNDER BUILD // LOS ANGELES</div>
+        </div>
+        <div class="slot-item slot-taken">
+          <div class="slot-num">CHASSIS 07</div>
+          <div class="slot-status">ALLOCATED // MIAMI</div>
+        </div>
+        <div class="slot-item slot-taken">
+          <div class="slot-num">CHASSIS 08</div>
+          <div class="slot-status">ALLOCATED // DUBAI</div>
+        </div>
+        <div class="slot-item slot-active-now">
+          <div class="slot-num">CHASSIS 09</div>
+          <div class="slot-status-active">★ CURRENT COMMISSION IN PROGRESS</div>
+        </div>
+        <div class="slot-item slot-available">
+          <div class="slot-num">CHASSIS 10</div>
+          <div class="slot-status-avail">SLOT AVAILABLE (Q3 2027)</div>
+        </div>
+        <div class="slot-item slot-available">
+          <div class="slot-num">CHASSIS 11</div>
+          <div class="slot-status-avail">SLOT AVAILABLE (Q4 2027)</div>
+        </div>
+        <div class="slot-item slot-available">
+          <div class="slot-num">CHASSIS 12</div>
+          <div class="slot-status-avail">SLOT AVAILABLE (Q1 2028)</div>
+        </div>
+      </div>
+
+      <!-- Bespoke Acquisition Terminal Form -->
+      <div class="inquiry-form-card">
+        <div class="form-header">
+          <div class="form-title">CONFIDENTIAL COMMISSION INQUIRY</div>
+          <div class="form-sub">Our Atelier Private Client Director will respond within 12 hours via encrypted channel.</div>
+        </div>
+
+        <form id="commission-form" class="inquiry-form" onsubmit="event.preventDefault(); window.handleFormSubmit();">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="client-name">FULL NAME / PATRON</label>
+              <input type="text" id="client-name" required placeholder="Lord, Dr., or First Last">
+            </div>
+            <div class="form-group">
+              <label for="client-email">CONFIDENTIAL EMAIL</label>
+              <input type="email" id="client-email" required placeholder="patron@privateoffice.com">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="client-phone">TELEPHONE / SIGNAL / TELEGRAM</label>
+              <input type="tel" id="client-phone" required placeholder="+44 7911 123456">
+            </div>
+            <div class="form-group">
+              <label for="client-tier">PREFERRED COMMISSION TIER</label>
+              <select id="client-tier">
+                <option value="gt-touring">GT Touring ($340,000 USD)</option>
+                <option value="atelier-speciale" selected>Atelier Speciale ($580,000 USD)</option>
+                <option value="prototype-zero">Prototype Zero (1-of-1 $920,000 USD)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="donor-chassis">DONOR CHASSIS DETAILS</label>
+              <input type="text" id="donor-chassis" placeholder="e.g. 2005 Porsche Carrera GT (or request Aether sourcing)">
+            </div>
+            <div class="form-group">
+              <label for="delivery-region">DELIVERY DESTINATION</label>
+              <input type="text" id="delivery-region" placeholder="e.g. Geneva, London, Tokyo, New York">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="client-notes">SPECIAL BESPOKE REQUESTS / BESPOKE INTENT</label>
+            <textarea id="client-notes" rows="4" placeholder="Detail any specific livery, bespoke materials, aerodynamic aspirations, or track targets..."></textarea>
+          </div>
+
+          <div class="form-submit-row">
+            <button type="submit" class="submit-inquiry-btn" id="btn-submit-inquiry">
+              <span>TRANSMIT COMMISSION DOSSIER</span>
+              <span class="btn-arrow">→</span>
+            </button>
+            <span class="privacy-disclaimer">All transmissions are secured under strict non-disclosure agreement (NDA).</span>
+          </div>
+
+          <div class="form-success-banner" id="form-success" style="display: none;">
+            <div class="s-icon">✓</div>
+            <div class="s-body">
+              <h4>COMMISSION DOSSIER RECEIVED</h4>
+              <p>Reference: <strong>#Æ-2027-SLOT-10</strong>. Our Private Client Liaison will contact you securely within 12 hours.</p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- ATELIER FOOTER                                                            -->
+  <!-- ========================================================================= -->
+  <footer class="atelier-footer">
+    <div class="footer-wrapper">
+      <div class="footer-top-row">
+        <div class="footer-brand-col">
+          <div class="f-monogram">Æ</div>
+          <div class="f-title">AETHER BESPOKE ATELIER</div>
+          <p class="f-desc">
+            Purveyors of ultra-limited hypercar engineering, autoclave composite chassis reconstruction, and atmospheric V10 acoustic art.
+          </p>
+          <div class="f-cities">
+            <span>STUTTGART</span> • <span>SILVERSTONE</span> • <span>TOKYO</span> • <span>LOS ANGELES</span>
+          </div>
+        </div>
+
+        <div class="footer-links-col">
+          <div class="f-col-title">NAVIGATION</div>
+          <a href="#hero">Disassembly Hero</a>
+          <a href="#manifesto">The Philosophy</a>
+          <a href="#engineering">Chassis Anatomy</a>
+          <a href="#configurator">Atelier Studio & Specs</a>
+          <a href="#pricing">Commission Tiers & Price</a>
+          <a href="#timeline">The 5-Phase Journey</a>
+        </div>
+
+        <div class="footer-links-col">
+          <div class="f-col-title">ENGINEERING SPECS</div>
+          <a href="#acoustic-lab">Inconel 625 Acoustics</a>
+          <a href="#engineering">Öhlins Pushrod Dampers</a>
+          <a href="#engineering">T1000 Carbon Monocoque</a>
+          <a href="#pricing">Labor Hours & Cost Accounting</a>
+          <a href="#inquiry">Active Slot Registry</a>
+        </div>
+
+        <div class="footer-links-col">
+          <div class="f-col-title">LEGAL & REGISTRY</div>
+          <a href="#">Official Provenance Registry</a>
+          <a href="#">FIA Safety Compliance</a>
+          <a href="#">Client Privacy & NDA</a>
+          <a href="#">Press Kit & Hi-Res Assets</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
+        <div class="f-copy">
+          © 2026 AETHER AUTOMOTIVE ATELIER GMBH. ALL RIGHTS RESERVED.
+        </div>
+        <div class="f-disclaimer">
+          All donor vehicle marks, emblems, and silhouettes belong to their respective original manufacturers. Aether operates an independent bespoke coachbuilding and restoration atelier.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>
